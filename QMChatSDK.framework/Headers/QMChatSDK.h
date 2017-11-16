@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <QMChatSDK/PublicHeader.h>
 
 
-#import <Qiniu/Qiniu.h>
+#import <Qiniu/QiniuSDK.h>
 #import <FMDB/FMDB.h>
 
 
