@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <QMChatSDK/PublicHeader.h>
 
 
-#import <Qiniu/QiniuSDK.h>
+#import <Qiniu/Qiniu.h>
 #import <FMDB/FMDB.h>
 
 
@@ -75,5 +75,10 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
  *  坐席信息通知
  */
 #define CUSTOMSRV_AGENT @"customagent"
+
+/**
+ *  专属坐席通知
+ */
+#define CUSTOMSRV_VIP @"customvip"
 
 
