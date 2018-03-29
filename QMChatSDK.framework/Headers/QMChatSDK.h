@@ -17,8 +17,9 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <QMChatSDK/PublicHeader.h>
 
 
-#import <Qiniu/QiniuSDK.h>
+#import <Qiniu/Qiniu.h>
 #import <FMDB/FMDB.h>
+
 
 /**
  *  注册accessId成功通知
@@ -80,4 +81,7 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
  */
 #define CUSTOMSRV_VIP @"customvip"
 
-
+/**
+ * 日程管理中的留言通知 (只适用于开启日程管理的坐席)
+ */
+#define CUSTOMSRV_LEAVEMSG @"leavemsg"

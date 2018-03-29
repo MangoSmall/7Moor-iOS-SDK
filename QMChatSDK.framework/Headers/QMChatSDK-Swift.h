@@ -239,6 +239,10 @@ SWIFT_CLASS("_TtC9QMChatSDK13CustomMessage")
 @property (nonatomic, copy) NSString * _Null_unspecified isUseful;
 /// 问题ID
 @property (nonatomic, copy) NSString * _Null_unspecified questionId;
+@property (nonatomic, copy) NSString * _Null_unspecified richTextUrl;
+@property (nonatomic, copy) NSString * _Null_unspecified richTextPicUrl;
+@property (nonatomic, copy) NSString * _Null_unspecified richTextTitle;
+@property (nonatomic, copy) NSString * _Null_unspecified richTextDescription;
 - (void)setValue:(id _Nullable)value forUndefinedKey:(NSString * _Nonnull)key;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -297,6 +301,14 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// param failBlock:     接入会话失败回调，
 + (void)sdkBeginNewChatSession:(NSString * _Nonnull)peer params:(NSDictionary<NSString *, id> * _Nonnull)params successBlock:(void (^ _Nonnull)(BOOL))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
 /// 发起新会话:
+/// 启用日程管理的用此接口
+/// 调用此接口、可以拥有与客服对话的能力、携带参数
+/// param schedule:      日程管理所需参数，传入此参数会话才能接入对应日程管理状态
+/// param params:        自定义参数
+/// param successBlock:  接入会话成功回调，回调参数为bool类型，判断后台是否开启问卷调查功能
+/// param failBlock:     接入会话失败回调，
++ (void)sdkBeginNewChatSessionSchedule:(NSString * _Nonnull)scheduleId processId:(NSString * _Nonnull)processId currentNodeId:(NSString * _Nonnull)currentNodeId params:(NSDictionary<NSString *, id> * _Nonnull)params successBlock:(void (^ _Nonnull)(BOOL))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
+/// 发起新会话:
 /// 调用此接口、可以拥有与客服对话的能力、状态以代理方法的方式回调
 /// param peer:          技能组ID，客服平台配置多个技能组时，需要传入对应的技能组ID，会话才能接入到对应的技能组，
 /// param delegate:      聊天界面的代理方法，
@@ -320,6 +332,12 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// param successBlock:  成功回调
 /// param failBlock:     回调失败
 + (void)sdkGetWebchatGlobleConfig:(void (^ _Nonnull)(NSDictionary * _Nonnull))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
+/// 获取渠道全局配置中的 scheduleConfig
+/// 调用此接口获取全局配置中的 scheduleConfig  此接口主要用于开启日程管理需要
+/// param configs:       配置信息
+/// param successBlock:  成功回调
+/// param failBlock:     回调失败
++ (void)sdkGetWebchatScheduleConfig:(void (^ _Nonnull)(NSDictionary * _Nonnull))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
 /// 发送文本消息:
 /// 调用此接口、可以发送文本消息，包括文字、表情
 /// param text:            文本消息内容
