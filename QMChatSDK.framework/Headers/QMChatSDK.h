@@ -85,3 +85,13 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
  * 日程管理中的留言通知 (只适用于开启日程管理的坐席)
  */
 #define CUSTOMSRV_LEAVEMSG @"leavemsg"
+
+/**
+ * 正在输入
+ */
+#define CUSTOMSRV_IMPORTING @"importing"
+
+/**
+ * 撤回消息
+ */
+#define CUSTOMSRV_DRAWMESSAGE @"drawmessage"
