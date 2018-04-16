@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name	 = "QMChatSDK"
   s.summary      = "7moor iOS SDK"
-  s.version	 = "2.5.0"
+  s.version	 = "2.5.1"
   s.description  = "iOS Frameworks for Customer Service"
 
   s.homepage     = "https://www.7moor.com/"
