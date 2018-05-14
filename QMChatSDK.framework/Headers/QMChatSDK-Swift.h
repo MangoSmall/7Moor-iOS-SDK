@@ -240,6 +240,9 @@ SWIFT_CLASS("_TtC9QMChatSDK13CustomMessage")
 @property (nonatomic, copy) NSString * _Null_unspecified richTextPicUrl;
 @property (nonatomic, copy) NSString * _Null_unspecified richTextTitle;
 @property (nonatomic, copy) NSString * _Null_unspecified richTextDescription;
+@property (nonatomic, copy) NSString * _Null_unspecified robotType;
+@property (nonatomic, copy) NSString * _Null_unspecified robotId;
+@property (nonatomic, copy) NSString * _Null_unspecified mp3FileSize;
 - (void)setValue:(id _Nullable)value forUndefinedKey:(NSString * _Nonnull)key;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -304,7 +307,7 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// param params:        自定义参数
 /// param successBlock:  接入会话成功回调，回调参数为bool类型，判断后台是否开启问卷调查功能
 /// param failBlock:     接入会话失败回调，
-+ (void)sdkBeginNewChatSessionSchedule:(NSString * _Nonnull)scheduleId processId:(NSString * _Nonnull)processId currentNodeId:(NSString * _Nonnull)currentNodeId params:(NSDictionary<NSString *, id> * _Nonnull)params successBlock:(void (^ _Nonnull)(BOOL))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
++ (void)sdkBeginNewChatSessionSchedule:(NSString * _Nonnull)scheduleId processId:(NSString * _Nonnull)processId currentNodeId:(NSString * _Nonnull)currentNodeId entranceId:(NSString * _Nonnull)entranceId params:(NSDictionary<NSString *, id> * _Nonnull)params successBlock:(void (^ _Nonnull)(BOOL))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
 /// 发起新会话:
 /// 调用此接口、可以拥有与客服对话的能力、状态以代理方法的方式回调
 /// param peer:          技能组ID，客服平台配置多个技能组时，需要传入对应的技能组ID，会话才能接入到对应的技能组，
@@ -403,10 +406,19 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// 将语音由未读取状态变为已读取状态
 /// param messageId:  消息ID
 + (void)changeAudioMessageStatus:(NSString * _Nonnull)messageId;
-/// 撤回消息接口：
+/// 撤回消息接口:
 /// 将发送的消息撤回
 /// param messageId:  消息ID
 + (void)changeDrawMessageStatus:(NSString * _Nonnull)messageId;
+/// 查询Mp3消息:
+/// 查询MP3类型文件的消息的大小
+/// param messageId:  消息ID
++ (NSString * _Nonnull)queryMp3FileMessageSize:(NSString * _Nonnull)messageId SWIFT_WARN_UNUSED_RESULT;
+/// 修改Mp3消息:
+/// 修改MP3类型文件的消息的大小
+/// param messageId:  消息ID
+/// param fileSize:   文件大小
++ (void)changeMp3FileMessageSize:(NSString * _Nonnull)messageId fileSize:(NSString * _Nonnull)fileSize;
 /// 请求人工服务:
 /// 调用此接口、请求人工服务(如后台开启智能机器人功能、默认为机器人服务器)
 /// param successBlock:  成功回调
@@ -442,7 +454,7 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// 客服离线状态下，未配置机器人客服或转人工客服时，可进行留言操作
 + (void)sdkSubmitLeaveMessageWithInformation:(NSString * _Nonnull)peer information:(NSDictionary<NSString *, NSString *> * _Nonnull)information leavemsgFields:(NSArray<NSDictionary<NSString *, id> *> * _Nonnull)leavemsgFields message:(NSString * _Nonnull)message successBlock:(void (^ _Nonnull)(void))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
 /// 机器人反馈
-+ (void)sdkSubmitRobotFeedback:(BOOL)isUseful questionId:(NSString * _Nonnull)questionId messageId:(NSString * _Nonnull)messageId successBlock:(void (^ _Nonnull)(void))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
++ (void)sdkSubmitRobotFeedback:(BOOL)isUseful questionId:(NSString * _Nonnull)questionId messageId:(NSString * _Nonnull)messageId robotType:(NSString * _Nonnull)robotType robotId:(NSString * _Nonnull)robotId successBlock:(void (^ _Nonnull)(void))successBlock failBlock:(void (^ _Nonnull)(void))failBlock;
 /// 自建服务器设置网络地址:
 /// 是不是自建服务器的用户不需要设置此项
 /// param tcpHost:       TCP连接地址
