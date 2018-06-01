@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/QMChatSDK-Swift.h</key>
 		<data>
-		fFG/g5ZBGEs6eJZt3p5YjyXhEc8=
+		ie+qAu9SoUtsXy4+zDUjns8JRqI=
 		</data>
 		<key>Headers/QMChatSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/i386.swiftmodule</key>
 		<data>
-		dFLVOPyTv2rGLvSn+udlBs6OsDU=
+		woI96ETslg9Bq7ye5dq3DFCFt/A=
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		hb8D2J91PeTchb7tOgqF0OAM8d0=
+		1Rchba7OlqkzCk+eQNzj3chmQcs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fFG/g5ZBGEs6eJZt3p5YjyXhEc8=
+			ie+qAu9SoUtsXy4+zDUjns8JRqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			k+DhJSJ5qK6rPgZYvASU8gGPdI9OHFYgNbxh3sKUkxo=
+			Q7LJ3JHnmFQp/SqTSpdZ2K11naSXLLEUQqH4XVKZjx4=
 			</data>
 		</dict>
 		<key>Headers/QMChatSDK.h</key>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dFLVOPyTv2rGLvSn+udlBs6OsDU=
+			woI96ETslg9Bq7ye5dq3DFCFt/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			JXnnPVXhc4tpMPh5d5vQftlSwNoh8n9THJHRzM4+sXw=
+			h5W8bFVFbvNnru6Q1HJC9Mg4eYa4mPMCaibcuLTOkUI=
 			</data>
 		</dict>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hb8D2J91PeTchb7tOgqF0OAM8d0=
+			1Rchba7OlqkzCk+eQNzj3chmQcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kg+suLmkgKTwpPH4YvwrnUjOyX/VD7XRDVcuUBXnbOg=
+			lOm2LrGsZsnwce0HLk5gn9HI2TUTufSUaEpOFxVlgvU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

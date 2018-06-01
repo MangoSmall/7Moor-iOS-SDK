@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import ObjectiveC;
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -461,6 +462,7 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// param tcpPort:       TCP端口号
 /// param httpPost:      HTTP请求地址
 + (void)setServerAddress:(NSString * _Nonnull)tcpHost tcpPort:(NSInteger)tcpPort httpPost:(NSString * _Nonnull)httpPost;
++ (void)setServerToken:(NSData * _Nonnull)deviceToken;
 /// 是否启用留言功能
 /// 全局配置：
 /// 启用留言功能，坐席不在线跳转到留言面板进行留言
