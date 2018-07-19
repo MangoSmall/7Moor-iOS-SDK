@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/QMChatSDK-Swift.h</key>
 		<data>
-		ie+qAu9SoUtsXy4+zDUjns8JRqI=
+		hryRD/C1cD+iYRpuWNCpdm8m/Aw=
 		</data>
 		<key>Headers/QMChatSDK.h</key>
 		<data>
-		gjAC00IFQTVBjcfBaky8pabbqdQ=
+		RdoG7it0HrACbkDp9hzKUx7eF/I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pL5naMl7KsROSQ7xBcGxrL+OtrM=
+		V0OxrLmx8dopR3/UkzAJabgH+/E=
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/i386.swiftdoc</key>
 		<data>
-		RUK9l+IlWNG7QR96gm4woDBVsuU=
+		gdwzDDyWsSkAgeXfsR+uhGwXc7s=
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/i386.swiftmodule</key>
 		<data>
-		woI96ETslg9Bq7ye5dq3DFCFt/A=
+		73CsZ4QfYq53gChCDr8pwU+uMEQ=
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		7yoe8lMAhv2r8g9x5Vrg51MzBTI=
+		55MsUhPPJFeDPt7ePitZzFAI3eY=
 		</data>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		1Rchba7OlqkzCk+eQNzj3chmQcs=
+		zmfIky5xRRHksarIVcfMDad4kjU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,66 +43,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ie+qAu9SoUtsXy4+zDUjns8JRqI=
+			hryRD/C1cD+iYRpuWNCpdm8m/Aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q7LJ3JHnmFQp/SqTSpdZ2K11naSXLLEUQqH4XVKZjx4=
+			aPAn7IM1Bfiap9jtvDx5d69FOZVMVkzHJTK70lyTmnc=
 			</data>
 		</dict>
 		<key>Headers/QMChatSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gjAC00IFQTVBjcfBaky8pabbqdQ=
+			RdoG7it0HrACbkDp9hzKUx7eF/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			a5twN39l4a+f9+9n3JWNnjRt69f5NSicD5WSQwnViA0=
+			+G4juIfWZCFoG1NMzUg4hxuHf0Crikjwz7+zyspmUFo=
 			</data>
 		</dict>
 		<key>Modules/QMChatSDK.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RUK9l+IlWNG7QR96gm4woDBVsuU=
+			gdwzDDyWsSkAgeXfsR+uhGwXc7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvfFXl3Tho4qhFhZkFuk1gGhz99y6asUHKz3QMJnfk8=
+			85uTavZKj56qFshiiWnTPn6mdeLNmA2zhtd7qoJUmss=
 			</data>
 		</dict>
 		<key>Modules/QMChatSDK.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			woI96ETslg9Bq7ye5dq3DFCFt/A=
+			73CsZ4QfYq53gChCDr8pwU+uMEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			h5W8bFVFbvNnru6Q1HJC9Mg4eYa4mPMCaibcuLTOkUI=
+			V0n4M2fK4hv9GjvBtowUUAbdPT/Zs1gHDKin3xuRrrQ=
 			</data>
 		</dict>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7yoe8lMAhv2r8g9x5Vrg51MzBTI=
+			55MsUhPPJFeDPt7ePitZzFAI3eY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cgn/HVvB9dVvOWQISOw+HExoz1nWpGKh7Zt1ZH51EU8=
+			jcsD6pSfEY4PbAE8bTDerG49dmGlgyBtgmz4XiCaAGo=
 			</data>
 		</dict>
 		<key>Modules/QMChatSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1Rchba7OlqkzCk+eQNzj3chmQcs=
+			zmfIky5xRRHksarIVcfMDad4kjU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lOm2LrGsZsnwce0HLk5gn9HI2TUTufSUaEpOFxVlgvU=
+			JAJsyFOnCrxt0JBL+YR5vgxTIMbX3JM+iX1DXdTerKc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
