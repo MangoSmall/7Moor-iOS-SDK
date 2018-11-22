@@ -274,6 +274,7 @@ SWIFT_CLASS("_TtC9QMChatSDK7QMAgent")
 @class NSDictionary;
 @class UIImage;
 @class NSArray;
+@class QMEvaluation;
 
 SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 @interface QMConnect : NSObject
@@ -462,6 +463,12 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// param successBlock:     成功回调
 /// param failureBlock :    失败回调
 + (void)sdkGetInvestigate:(void (^ _Nonnull)(NSArray * _Nonnull))successBlock failureBlock:(void (^ _Nonnull)(void))failureBlock;
+/// 获取满意度评价信息:
+/// 用于满意度调查，增加自定义满意度标题和评价感谢语
+/// param evaluation: 评价信息
+/// param successBlock:     成功回调
+/// param failureBlock :    失败回调
++ (void)newSDKGetInvestigate:(void (^ _Nonnull)(QMEvaluation * _Nonnull))successBlock failureBlock:(void (^ _Nonnull)(void))failureBlock;
 /// 获取技能组信息:
 /// 开始会话前选择技能组进入
 /// param investigateArray: 评价信息
@@ -508,6 +515,10 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 /// 全局配置：
 /// 未启用留言状态下，弹出的提示内容
 + (NSString * _Nonnull)leaveMessageAlert SWIFT_WARN_UNUSED_RESULT;
+/// 留言标题
+/// 全局配置：
+/// 启用留言状态下，展示在留言界面的标题
++ (NSString * _Nonnull)leaveMessageTitle SWIFT_WARN_UNUSED_RESULT;
 /// 留言内容占位
 /// 全局配置：
 /// 启用留言状态下，展示在留言板输入框的占位提醒
@@ -534,6 +545,26 @@ SWIFT_CLASS("_TtC9QMChatSDK9QMConnect")
 + (NSInteger)breakSessionAlertDuration SWIFT_WARN_UNUSED_RESULT;
 /// 判断是否启用机器人
 + (BOOL)allowRobot SWIFT_WARN_UNUSED_RESULT;
+/// 判断是启用 显示转人工按钮
++ (BOOL)manualButtonStatus SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class QMEvaluats;
+
+SWIFT_CLASS("_TtC9QMChatSDK12QMEvaluation")
+@interface QMEvaluation : NSObject
+@property (nonatomic, copy) NSString * _Null_unspecified title;
+@property (nonatomic, copy) NSString * _Null_unspecified thank;
+@property (nonatomic, copy) NSArray<QMEvaluats *> * _Null_unspecified evaluats;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9QMChatSDK10QMEvaluats")
+@interface QMEvaluats : NSObject
+@property (nonatomic, copy) NSString * _Null_unspecified name;
+@property (nonatomic, copy) NSString * _Null_unspecified value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
