@@ -4,7 +4,7 @@
 //
 //  Created by haochongfeng on 2017/11/8.
 //  Copyright © 2017年 haochongfeng. All rights reserved.
-//  SDK Version = 2.8.4
+//  SDK Version = 3.0.0
 
 #import <UIKit/UIKit.h>
 
@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char QMChatSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <QMChatSDK/PublicHeader.h>
 
 
-#import <Qiniu/QiniuSDK.h>
+#import <Qiniu/Qiniu.h>
 #import <FMDB/FMDB.h>
 
 
